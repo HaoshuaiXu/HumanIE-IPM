@@ -14,9 +14,9 @@ def select_by_relationid_from_opendata(datafilepath, to_select_relation_id:str, 
 
 if __name__ == '__main__':
     open_data_filepath = "/Users/xuhaoshuai/GitHub/HumanIE_IPM/data/raw_data/open_data(all)/sent_relation_train.txt"
-    for i in range(1, 7):
-        select_by_relationid_from_opendata(
-            datafilepath=open_data_filepath,
-            to_select_relation_id=str(i),
-            savedfilepath="/Users/xuhaoshuai/GitHub/HumanIE_IPM/data/select_data/open_data_couple_sent_id" + str(i) + ".csv"
+    saved_filepath = "/Users/xuhaoshuai/GitHub/HumanIE_IPM/data/select_data_sent_id/open_data_parentschild_13.csv"
+    select_by_relationid_from_opendata(
+        datafilepath=open_data_filepath,
+        to_select_relation_id="13",
+        savedfilepath=saved_filepath,
         )
