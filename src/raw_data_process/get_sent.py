@@ -9,7 +9,7 @@ if __name__ == '__main__':
         )
     
     sent_id_set = pd.read_csv(
-        filepath_or_buffer="/Users/xuhaoshuai/GitHub/HumanIE_IPM/data/opendata_sent_id/opendata_friend_30.csv",
+        filepath_or_buffer="/Users/xuhaoshuai/GitHub/HumanIE_IPM/data/opendata_sent_id/opendata_couple_all.csv",
         sep='\t',
         names=['sent_id']
     )
@@ -19,6 +19,6 @@ if __name__ == '__main__':
         right=sent_train,
         on='sent_id'
         ).to_csv(
-            "/Users/xuhaoshuai/GitHub/HumanIE_IPM/data/opendata_sent_set/friend.csv",
+            "/Users/xuhaoshuai/GitHub/HumanIE_IPM/data/opendata_sent_set/couple_test.csv",
             index=False
         )

@@ -28,5 +28,5 @@ with open("/Users/xuhaoshuai/GitHub/HumanIE_IPM/data/opendata_sent_set_remove-st
     for s in sent_clean:
         tmp = ''
         for w in s:
-            tmp = tmp + ' ' + w
+            tmp = tmp + ' ' + w # 这句逻辑有个问题，就是会让第一个字符前面也有空格，注意一下
         f.writelines(tmp + '\n')
