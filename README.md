@@ -1,4 +1,4 @@
-# HumanIE_IPM
+# HumanIE-IPM
 
 ## 文件夹结构
 
